@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Redmine of ISP department</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style media="screen" type="text/css">
+    .tran:hover{
+      transform: scale(1.2, 1.2) translateY(-40px);
+      transition: all 0.2s ease 0.2s;
+    }
+
+    .maintitle:hover{
+      transform: scale(1.4,1.4);
+      transition: all 0.2s ease-in-out 0.2s;
+    }
+    </style>
+  </head>
+  <body>
+		<section class="hero is-success is-fullheight">
+			<div class="hero-head">
+				<header class="nav">
+					<div class="container">
+						<div class="nav-left">
+							<a class="nav-item" href="/">
+								<i class="fa fa-smile-o" aria-hidden="true"></i>
+								　ISP 运营商事业部
+							</a>
+						</div>
+						<div class="nav-left nav-menu">
+							<a class="nav-item is-active">
+								Redmine导航页
+							</a>
+						</div>
+						<div class="nav-right nav-menu">
+							<span class="nav-item">
+								<a target="_blank" href="redmine/login" class="button is-success is-inverted">
+									<span>登录</span>
+								</a>
+							</span>
+							<span class="nav-item">
+								<a target="_blank" href="redmine/account/register" class="button is-success is-inverted">
+									<span>注册</span>
+								</a>
+							</span>
+						</div>
+					</div>
+				</header>
+			</div>
+			<div class="hero-body">
+				<div class="container has-text-centered maintitle">
+					<h1 class="title" style="font-size:50px">
+						ISP Department
+					</h1>
+					<h2 class="subtitle" style="font-size:40px">
+						运营商事业部
+					</h2>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="tile is-ancestor">
+				<div class="tile tran" id="go_reg">
+					<div class="tile is-parent">
+						<article class="tile is-child notification is-primary">
+							<p class="title">文档首页</p>
+							<p class="subtitle">查看ISP文档托管站</p>
+							<!-- <a class="button" href="redmine/account/register" style="opacity: 50">Go ~</a> -->
+						</article>
+					</div>
+				</div>
+				<div class="tile tran" id="go_scan">
+					<div class="tile is-parent">
+						<article class="tile is-child notification is-warning">
+							<p class="title">项目查看</p>
+							<p class="subtitle">点击浏览公开项目，或者管理自己的项目</p>
+							<!-- <a class="button" href="redmine/projects">view details</a> -->
+						</article>
+					</div>
+				</div>
+				<div class="tile tran" onclick="return checkUser();">
+					<div class="tile is-parent">
+						<article class="tile is-child notification is-info">
+							<p class="title">Redmine首页</p>
+							<p class="subtitle">查看公开信息</p>
+							<!-- <a class="button" href="redmine/login">view details</a> -->
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="hero-foot  has-text-centered">
+				© 2016 TP-LINK Company, Inc.
+			</div>
+		</section>
+		<script>
+      document.getElementById('go_reg').addEventListener("click", function(){
+        window.location.href="doc/";
+				window.event.returnValue=false;
+      });
+      document.getElementById('go_scan').addEventListener("click", function(){
+        window.location.href="redmine/projects";
+				window.event.returnValue=false;
+      });
+	  
+	  function checkUser() {
+	  window.location.href="redmine/";
+	  return false;
+	  }
+		</script>
+  </body>
+</html>
