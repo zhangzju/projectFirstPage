@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Redmine of ISP department</title>
+    <title>ISP department inner navigator</title>
     <link rel="stylesheet" href="css/style.css">
     <style media="screen" type="text/css">
     .tran:hover{
-      transform: scale(1.2, 1.2) translateY(-40px);
+      transform: scale(1.2, 1.2);
       transition: all 0.2s ease 0.2s;
     }
 
@@ -26,11 +26,6 @@
 							<a class="nav-item" href="/">
 								<i class="fa fa-smile-o" aria-hidden="true"></i>
 								　ISP 运营商事业部
-							</a>
-						</div>
-						<div class="nav-left nav-menu">
-							<a class="nav-item is-active">
-								Redmine导航页
 							</a>
 						</div>
 						<div class="nav-right nav-menu">
@@ -65,7 +60,7 @@
 					<div class="tile is-parent">
 						<article class="tile is-child notification is-primary">
 							<p class="title">文档首页</p>
-							<p class="subtitle">查看ISP文档托管站</p>
+							<p class="subtitle">查看ISP文档站</p>
 							<!-- <a class="button" href="redmine/account/register" style="opacity: 50">Go ~</a> -->
 						</article>
 					</div>
@@ -74,16 +69,43 @@
 					<div class="tile is-parent">
 						<article class="tile is-child notification is-warning">
 							<p class="title">项目查看</p>
-							<p class="subtitle">点击浏览公开项目，或者管理自己的项目</p>
+							<p class="subtitle">点击进入Redmine项目管理系统</p>
 							<!-- <a class="button" href="redmine/projects">view details</a> -->
 						</article>
 					</div>
 				</div>
-				<div class="tile tran" onclick="return checkUser();">
+				<div class="tile tran" onclick="javascript:window.open('https://spcodes.rd.tp-link.net')" >
 					<div class="tile is-parent">
 						<article class="tile is-child notification is-info">
-							<p class="title">Redmine首页</p>
-							<p class="subtitle">查看公开信息</p>
+							<p class="title">代码首页</p>
+							<p class="subtitle">点击进入Gitlab源代码控制系统</p>
+							<!-- <a class="button" href="redmine/login">view details</a> -->
+						</article>
+					</div>
+				</div>
+				<div class="tile tran" onclick="javascript:window.open('http://rdsohosvnmgr.tp-link.net/')">
+					<div class="tile is-parent">
+						<article class="tile is-child notification is-success">
+							<p class="title">SVN首页</p>
+							<p class="subtitle">点击进入rdsohosvnmgr权限申请</p>
+							<!-- <a class="button" href="redmine/login">view details</a> -->
+						</article>
+					</div>
+				</div>
+				<div class="tile tran" onclick="javascript:window.open('http://spjenkins.rd.tp-link.net:8080')">
+					<div class="tile is-parent">
+						<article class="tile is-child notification is-link">
+							<p class="title">持续集成</p>
+							<p class="subtitle">点击登录Jenkins持续集成系统</p>
+							<!-- <a class="button" href="redmine/login">view details</a> -->
+						</article>
+					</div>
+				</div>
+				<div class="tile tran" onclick="javascript:window.open('http://spdocker.rd.tp-link.net/')">
+					<div class="tile is-parent">
+						<article class="tile is-child notification is-danger">
+							<p class="title">Docker镜像</p>
+							<p class="subtitle">点击进入docker镜像列表页</p>
 							<!-- <a class="button" href="redmine/login">view details</a> -->
 						</article>
 					</div>
