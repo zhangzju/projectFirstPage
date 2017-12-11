@@ -1,136 +1,161 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>ISP department inner navigator</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style media="screen" type="text/css">
-    .tran:hover{
-      transform: scale(1.2, 1.2);
-      transition: all 0.2s ease 0.2s;
-    }
 
-    .maintitle:hover{
-      transform: scale(1.4,1.4);
-      transition: all 0.2s ease-in-out 0.2s;
-    }
-    </style>
-  </head>
-  <body>
-		<section class="hero is-success is-fullheight">
-			<div class="hero-head">
-				<header class="nav">
-					<div class="container">
-						<div class="nav-left">
-							<a class="nav-item" href="/">
-								<i class="fa fa-smile-o" aria-hidden="true"></i>
-								　ISP 运营商事业部
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>ISP department inner navigator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style media="screen" type="text/css">
+		.tran:hover {
+			transform: scale(1.2, 1.2);
+			transition: all 0.2s ease 0.2s;
+		}
+
+		.maintitle:hover {
+			transform: scale(1.4, 1.4);
+			transition: all 0.2s ease-in-out 0.2s;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="hero is-info is-fullheight">
+		<div class="hero-head">
+			<header class="nav">
+				<div class="container">
+					<div class="nav-left">
+						<a class="nav-item" href="/">
+							<i class="fa fa-smile-o" aria-hidden="true"></i>
+							ISP 运营商事业部
+						</a>
+					</div>
+					<div class="nav-right nav-menu">
+						<span class="nav-item">
+							<a target="_blank" href="redmine/login" class="button is-success is-inverted">
+								<span>登录</span>
 							</a>
-						</div>
-						<div class="nav-right nav-menu">
-							<span class="nav-item">
-								<a target="_blank" href="redmine/login" class="button is-success is-inverted">
-									<span>登录</span>
-								</a>
-							</span>
-							<span class="nav-item">
-								<a target="_blank" href="redmine/account/register" class="button is-success is-inverted">
-									<span>注册</span>
-								</a>
-							</span>
-						</div>
+						</span>
+						<span class="nav-item">
+							<a target="_blank" href="redmine/account/register" class="button is-success is-inverted">
+								<span>注册</span>
+							</a>
+						</span>
 					</div>
-				</header>
+				</div>
+			</header>
+		</div>
+		<div class="hero-body">
+			<div class="container has-text-centered maintitle">
+				<h1 class="title" style="font-size:50px">
+					ISP Department
+				</h1>
+				<h2 class="subtitle" style="font-size:40px">
+					运营商事业部
+				</h2>
 			</div>
-			<div class="hero-body">
-				<div class="container has-text-centered maintitle">
-					<h1 class="title" style="font-size:50px">
-						ISP Department
-					</h1>
-					<h2 class="subtitle" style="font-size:40px">
-						运营商事业部
-					</h2>
-				</div>
-			</div>
-		</section>
-		<section class="section">
-			<div class="tile is-ancestor">
-				<div class="tile tran" id="go_reg">
-					<div class="tile is-parent">
-						<article class="tile is-child notification is-primary">
-							<p class="title">文档首页</p>
-							<p class="subtitle">查看ISP文档站</p>
-							<!-- <a class="button" href="redmine/account/register" style="opacity: 50">Go ~</a> -->
-						</article>
-					</div>
-				</div>
-				<div class="tile tran" id="go_scan">
-					<div class="tile is-parent">
-						<article class="tile is-child notification is-warning">
-							<p class="title">项目查看</p>
-							<p class="subtitle">点击进入Redmine项目管理系统</p>
-							<!-- <a class="button" href="redmine/projects">view details</a> -->
-						</article>
-					</div>
-				</div>
-				<div class="tile tran" onclick="javascript:window.open('https://spcodes.rd.tp-link.net')" >
-					<div class="tile is-parent">
-						<article class="tile is-child notification is-info">
-							<p class="title">代码首页</p>
-							<p class="subtitle">点击进入Gitlab源代码控制系统</p>
-							<!-- <a class="button" href="redmine/login">view details</a> -->
-						</article>
-					</div>
-				</div>
-				<div class="tile tran" onclick="javascript:window.open('http://rdsohosvnmgr.tp-link.net/')">
-					<div class="tile is-parent">
-						<article class="tile is-child notification is-success">
-							<p class="title">SVN首页</p>
-							<p class="subtitle">点击进入rdsohosvnmgr权限申请</p>
-							<!-- <a class="button" href="redmine/login">view details</a> -->
-						</article>
-					</div>
-				</div>
-				<div class="tile tran" onclick="javascript:window.open('http://spjenkins.rd.tp-link.net:8080')">
-					<div class="tile is-parent">
-						<article class="tile is-child notification is-link">
-							<p class="title">持续集成</p>
-							<p class="subtitle">点击登录Jenkins持续集成系统</p>
-							<!-- <a class="button" href="redmine/login">view details</a> -->
-						</article>
-					</div>
-				</div>
-				<div class="tile tran" onclick="javascript:window.open('http://spdocker.rd.tp-link.net/')">
-					<div class="tile is-parent">
-						<article class="tile is-child notification is-danger">
-							<p class="title">Docker镜像</p>
-							<p class="subtitle">点击进入docker镜像列表页</p>
-							<!-- <a class="button" href="redmine/login">view details</a> -->
-						</article>
-					</div>
+		</div>
+		<div>
+			<p id="scrollobj" style="white-space:nowrap;overflow:hidden;width:80vh;margin: auto;" onmouseover="stop()" onmouseout="start()">
+				<span style="padding-left: 10px;">运营商事业部内部服务器导航首页已经全面改版，docker服务器详情请留意文档站点的公告！</span>
+			</p>
+		</div>
+	</section>
+	<section class="section">
+		<div class="tile is-ancestor">
+			<div class="tile tran" id="go_reg">
+				<div class="tile is-parent">
+					<article class="tile is-child notification is-primary">
+						<p class="title">文档首页</p>
+						<p class="subtitle">查看ISP文档站</p>
+						<!-- <a class="button" href="redmine/account/register" style="opacity: 50">Go ~</a> -->
+					</article>
 				</div>
 			</div>
-		</section>
-		<section class="section">
-			<div class="hero-foot  has-text-centered">
-				© 2016 TP-LINK Company, Inc.
+			<div class="tile tran" id="go_scan">
+				<div class="tile is-parent">
+					<article class="tile is-child notification is-warning">
+						<p class="title">项目查看</p>
+						<p class="subtitle">点击进入Redmine项目管理系统</p>
+						<!-- <a class="button" href="redmine/projects">view details</a> -->
+					</article>
+				</div>
 			</div>
-		</section>
-		<script>
-      document.getElementById('go_reg').addEventListener("click", function(){
-        window.location.href="doc/";
-				window.event.returnValue=false;
-      });
-      document.getElementById('go_scan').addEventListener("click", function(){
-        window.location.href="redmine/projects";
-				window.event.returnValue=false;
-      });
-	  
-	  function checkUser() {
-	  window.location.href="redmine/";
-	  return false;
-	  }
-		</script>
-  </body>
+			<div class="tile tran" onclick="javascript:window.open('https://spcodes.rd.tp-link.net')">
+				<div class="tile is-parent">
+					<article class="tile is-child notification is-info">
+						<p class="title">代码首页</p>
+						<p class="subtitle">点击进入Gitlab源代码控制系统</p>
+						<!-- <a class="button" href="redmine/login">view details</a> -->
+					</article>
+				</div>
+			</div>
+			<div class="tile tran" onclick="javascript:window.open('http://rdsohosvnmgr.tp-link.net/')">
+				<div class="tile is-parent">
+					<article class="tile is-child notification is-success">
+						<p class="title">SVN首页</p>
+						<p class="subtitle">点击进入rdsohosvnmgr权限申请</p>
+						<!-- <a class="button" href="redmine/login">view details</a> -->
+					</article>
+				</div>
+			</div>
+			<div class="tile tran" onclick="javascript:window.open('http://spjenkins.rd.tp-link.net:8080')">
+				<div class="tile is-parent">
+					<article class="tile is-child notification is-link">
+						<p class="title">持续集成</p>
+						<p class="subtitle">点击登录Jenkins持续集成系统</p>
+						<!-- <a class="button" href="redmine/login">view details</a> -->
+					</article>
+				</div>
+			</div>
+			<div class="tile tran" onclick="javascript:window.open('http://spdocker.rd.tp-link.net/')">
+				<div class="tile is-parent">
+					<article class="tile is-child notification is-danger">
+						<p class="title">Docker镜像</p>
+						<p class="subtitle">点击进入docker镜像列表页</p>
+						<!-- <a class="button" href="redmine/login">view details</a> -->
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="hero-foot  has-text-centered">
+			© 2016 TP-LINK Company, Inc.
+		</div>
+	</section>
+	<script>
+		document.getElementById('go_reg').addEventListener("click", function () {
+			window.location.href = "doc/";
+			window.event.returnValue = false;
+		});
+		document.getElementById('go_scan').addEventListener("click", function () {
+			window.location.href = "redmine/projects";
+			window.event.returnValue = false;
+		});
+
+		function checkUser() {
+			window.location.href = "redmine/";
+			return false;
+		}
+
+		function scroll(obj) {
+			var tmp = (obj.scrollLeft) ++;
+			//当滚动条到达右边顶端时
+			if (obj.scrollLeft == tmp) obj.innerHTML += obj.innerHTML;
+			//当滚动条滚动了初始内容的宽度时滚动条回到最左端
+			if (obj.scrollLeft >= obj.firstChild.offsetWidth) obj.scrollLeft = 0;
+		}
+		var a = setInterval("scroll(document.getElementById('scrollobj'))", 20);
+
+		function stop() {
+			clearInterval(a);
+		}
+
+		function start() {
+			a = setInterval("scroll(document.getElementById('scrollobj'))", 30);
+		}
+	</script>
+</body>
+
 </html>
